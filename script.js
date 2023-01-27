@@ -1,4 +1,5 @@
-
+//wrap code with ready function, function called when dom is fully loaded
+$(document).ready(function() {
 function evaluateOver(time){
   if(currentHour > time){
     return "past"
@@ -47,4 +48,5 @@ $('.time-block').each(function() {
   if (savedInput) {
     $(this).find('.description').val(savedInput);
   }
+});
 });
